@@ -1,0 +1,20 @@
+{
+  "event": "ddos_detected",
+  "timestamp": 1719876342,
+  "severity": 9,
+  "window_start": 1719876332,
+  "metrics": {
+    "packets": 28543,
+    "bytes": 19482102,
+    "unique_src": 14,
+    "syn": 2347,
+    "ack": 19,
+    "rst": 2,
+    "fin": 0,
+    "udp_bytes": 16723000,
+    "icmp_bytes": 0,
+    "fragments": 0
+  },
+  "triggered": ["volume", "udp_flood"],
+  "top_ips": [["203.0.113.1", 12394], ["203.0.113.2", 11023]]
+}
