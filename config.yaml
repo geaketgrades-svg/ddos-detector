@@ -1,0 +1,16 @@
+window_size: 10          # seconds
+window_overlap: 5        # seconds (overlap 50%)
+history_size: 100        # number of windows to keep
+alpha: 0.2               # EWMA smoothing factor
+
+detectors:
+  volume_threshold: 3.0      # trigger if current / baseline >= this
+  source_threshold: 4.0      # trigger if src_ips / baseline >= this
+  syn_ratio_threshold: 0.4   # trigger if SYN / total packets >= this
+  udp_ratio_threshold: 0.6   # trigger if UDP bytes / total bytes >= this
+
+output:
+  syslog_enabled: true
+  syslog_host: 127.0.0.1
+  syslog_port: 514
+  json_output: true
